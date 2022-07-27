@@ -963,6 +963,70 @@ color: #000;
 #menu1Toggle {
   display: flex;
 }
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 177%;
+  margin-top: 0%;
+  margin-left: 0px;
+  opacity: 0;
+  position: absolute;
+  filter: blur(5px);
+  width: 100%;
+  z-index: -1;
+}
+.crossfade > figure:nth-child(1) { background-image: url('slideshow/1.jpg'); }
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('slideshow/2.jpg');
+}
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('slideshow/3.jpg');
+}
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('slideshow/4.jpg');
+}
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('slideshow/5.jpg');
+}
+.crossfade > figure:nth-child(6) {
+  animation-delay: 30s;
+  background-image: url('slideshow/6.jpg');
+}
+.crossfade > figure:nth-child(7) {
+  animation-delay: 36s;
+  background-image: url('slideshow/7.jpg');
+}
+.crossfade > figure:nth-child(8) {
+  animation-delay: 42s;
+  background-image: url('slideshow/8.jpg');
+}
+
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
 </style>
 <script>
   function stop()
@@ -1007,9 +1071,11 @@ color: #000;
         <span></span>
     <ul id="menu1">
       <li><a href="index.html">Acasă</a></li>
-      <li><a href="produse.html">Produse</a></li>
-      <li><a href="comanda.html">Comandă</a></li>
+      <li><a href="despre.html">Despre noi</a></li>
+      <li><a href="inchirieri.html">Inchirieri</a></li>
+      <li><a href="evenimente.html">Evenimente</a></li>
       <li><a href="contact.html">Contact</a></li>
+
     </ul>
   </div>
   </nav>
@@ -1017,21 +1083,13 @@ color: #000;
 <div class="welcome">Bine ați venit pe pagina oficiala <br>Canoe T'URS</div>
 
       <!-- You can add more ".slideshow-image" elements, but remember to update the "$items" variable on SCSS -->
- <div class="slideshow">
-       <div class="slideshow-image" style="background-image: url('slideshow/7.jpg')">  </div>       
-        <div class="slideshow-image" style="background-image: url('slideshow/1.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/4.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/3.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/2.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/5.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/6.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/8.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/9.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/10.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/11.jpg')"></div>
-        <div class="slideshow-image" style="background-image: url('slideshow/12.jpg')"></div>
-      </div> 
-
+      <div class="crossfade">
+        <figure></figure>
+         <figure></figure>
+         <figure></figure>
+         <figure></figure>
+         <figure></figure>
+       </div> 
 
      
       
@@ -1065,7 +1123,7 @@ Vaslitul poate fi practicat atat individual cat si in echipa, acoperind o gama l
         <div class="person">
           <div class="about" >
             <div class="about-inner" >
-              <img class="circle" src="slideshow/" >
+              <img class="circle" src="banner1.jpg" >
             </div>
           </div>
           <div class="numele">Mircea</div>
@@ -1079,7 +1137,7 @@ Vaslitul poate fi practicat atat individual cat si in echipa, acoperind o gama l
         <div class="person">
           <div class="about" >
             <div class="about-inner">
-              <img class="circle" src="slideshow/">
+              <img class="circle" src="banner1.jpg">
             </div>
           </div>
           <div class="numele">Stefan</div>
