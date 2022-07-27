@@ -1,0 +1,1209 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/menucss.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/hr.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>
+
+    </title>
+    <script>
+      
+    </script>
+    <style>
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Fascinate+Inline&family=Signika&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(rgba(38, 103, 200, 0.749) 0%, rgba(125, 190, 251, 0.373) 100%);margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+}
+body,
+html {
+    font-family: 'Osward', sans-serif;  margin: 0;
+    overflow-x: hidden
+}
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+
+
+
+.nav-8{
+  background: linear-gradient(rgba(38, 103, 200, 0.749) 0%, rgba(125, 190, 251, 0.373) 100%);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+backdrop-filter: blur(5px);
+z-index: 1110;
+margin: 0%;
+}
+.nav-8 nav{
+  float: right;
+width: 50%;
+  height: 100%;
+display: flex;
+justify-content: space-evenly;
+
+}
+.nav-8 .linktext{
+  font-size:1.5vmax;
+  text-align:center;
+  position:relative;
+  z-index:2;
+  color:#ffcc01;
+  -webkit-text-stroke: black;
+-webkit-text-stroke-width: 1px;
+  text-decoration:none;
+  font-family: 'Oswald', sans-serif;  
+  transition:0.3s ease-in-out;
+  -webkit-transition:0.3s ease-in-out;
+  transition-delay:0s;
+  -webkit-transition-delay:0s;
+}
+.nav-8 .linktext:before, .nav-8 .linktext:after{
+  opacity:0;
+  position:absolute;
+  top:34px;
+  transform:translateY(36px);
+  -webkit-transform:translateY(36px);
+  left:0px;
+  width:100%;
+  transition:0.3s ease-in-out;
+  -webkit-transition:0.3s ease-in-out;
+  font-size:0.5em;
+}
+.nav-8 .linktext:before{
+  content:'';
+  height:2px;
+  background:#236CCF;
+  transition-delay:0s;
+  -webkit-transition-delay:0s;
+}
+.nav-8 .linktext:after{
+  padding-top: 2px;
+  content:attr(data-text);
+  color:#f9dfbc;
+  transition-delay:0s;
+  -webkit-transition-delay:0s;
+  
+}
+.nav-8 .numeL{
+  padding-left: 5px;
+  width: 45%;
+  font-family:'Black Ops One', 'Righteous', Arial, sans-serif;
+  font-size: 2.3vmax;
+  float: left;
+  display: flex;
+  align-items: center
+
+
+}
+
+
+.nav-8 .numeL img{
+    width: 180px;
+    padding-right: 35px;
+}
+.nav-8 .item{
+  position:relative;
+  display:inline-block;
+  height:25px;
+  margin-left:15px;
+  margin-right:15px;
+  margin-bottom:20px;
+  background:transparent;
+  transition:0.3s ease-in-out;
+  -webkit-transition:0.3s ease-in-out;
+  z-index:2;
+  color:#007BFF;
+  text-decoration:none;
+  font-family:Arial, sans-serif;
+  text-transform:uppercase;
+  transition:0.3s ease-in-out;
+  -webkit-transition:0.3s ease-in-out;
+}
+.nav-8 .item:hover .linktext{
+  transform:scale(1.3);
+  -webkit-transform:scale(1.3);
+  transform:translateY(-26px);
+  -webkit-transform:(-26px);
+}
+.nav-8 .item:hover .linktext:before{
+  transition-delay:0s;
+  -webkit-transition-delay:0s;
+}
+.nav-8 .item:hover .linktext:after{
+  transition-delay:0.15s;
+  -webkit-transition-delay:0.15s;
+}
+.nav-8 .item:hover .linktext:before, .nav-8 .item:hover .linktext:after{
+  transform:translateY(16px);
+  -webkit-transform:translateY(16px);
+  opacity:1;
+}
+
+/* MEDIA QUERIES ENDS*/
+        .cap{
+            height: 100VH;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+  .cap h1{
+    position: absolute;
+    left: 39%;
+    right: auto;
+    top:70%;
+    font-size: 3.5vmax;
+    font-family: 'Kanit', sans-serif;
+}
+.cap .logo{
+    position: absolute;
+    display: flex;
+    margin-left: 35%;
+    width: 30%;
+    margin-right: auto;
+    top:20%;
+}
+        .content1{
+            height: 130vh;
+            background-image: url('download.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+       
+        .crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  margin-top: 0%;
+  margin-left: 0px;
+  opacity: 0;
+  position: absolute;
+  filter: blur(2px);
+  width: 100%;
+  z-index: 0;
+}
+.crossfade > figure:nth-child(1) { background-image: url('slideshow/'); }
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('slideshow/1.jpg');
+}
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('slideshow/2.jpg');
+}
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('slideshow/3.jpg');
+}
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('slideshow/4.jpg');
+}
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+span{
+  background: rgb(255,204,1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10vmin;
+  overflow: hidden;
+  transform: skew(5deg);
+}
+.container .card {
+  flex: 1;
+  transition: all 1s ease-in-out;
+  height: 75vmin;
+  position: relative;
+}
+.container .card .card__head {
+  color: black;
+  background: #ffcc01;
+  padding: 0.5em;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.4em;
+  font-family: 'Oswald', sans-serif;
+
+  white-space: nowrap;
+}
+.container .card:hover {
+  flex-grow: 10;
+}
+
+.container .card:hover .card__head {
+  text-align: center;
+  top: calc(100% - 2em);
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  transform: rotate(0deg) skew(-5deg);
+  
+}
+.container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+}
+.container .card:not(:nth-child(5)) {
+  margin-right: 1em;
+}
+.slideshow {
+  position: absolute;
+  width: 100%;
+  height: 150%;
+  overflow: hidden;
+  top: 0;
+  z-index: 0;
+}
+
+.slideshow-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: all 1s ease-in-out;
+  -webkit-animation-name: kenburns;
+          animation-name: kenburns;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  opacity: 1;
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+
+}
+.slideshow-image:nth-child(1) {
+  -webkit-animation-name: kenburns-1;
+          animation-name: kenburns-1;
+  z-index: 3;
+}
+.slideshow-image:nth-child(2) {
+  -webkit-animation-name: kenburns-2;
+          animation-name: kenburns-2;
+  z-index: 2;
+}
+.slideshow-image:nth-child(3) {
+  -webkit-animation-name: kenburns-3;
+          animation-name: kenburns-3;
+  z-index: 1;
+}
+.slideshow-image:nth-child(4) {
+  -webkit-animation-name: kenburns-4;
+          animation-name: kenburns-4;
+  z-index: 0;
+}
+
+@-webkit-keyframes kenburns-1 {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  1.5625% {
+    opacity: 1;
+  }
+  23.4375% {
+    opacity: 1;
+  }
+  26.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  98.4375% {
+    opacity: 0;
+    transform: scale(1.2117647059);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes kenburns-1 {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  1.5625% {
+    opacity: 1;
+  }
+  23.4375% {
+    opacity: 1;
+  }
+  26.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  98.4375% {
+    opacity: 0;
+    transform: scale(1.2117647059);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes kenburns-2 {
+  23.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  26.5625% {
+    opacity: 1;
+  }
+  48.4375% {
+    opacity: 1;
+  }
+  51.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+@keyframes kenburns-2 {
+  23.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  26.5625% {
+    opacity: 1;
+  }
+  48.4375% {
+    opacity: 1;
+  }
+  51.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes kenburns-3 {
+  48.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  51.5625% {
+    opacity: 1;
+  }
+  73.4375% {
+    opacity: 1;
+  }
+  76.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+@keyframes kenburns-3 {
+  48.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  51.5625% {
+    opacity: 1;
+  }
+  73.4375% {
+    opacity: 1;
+  }
+  76.5625% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  76.5625% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+@keyframes kenburns-4 {
+  73.4375% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  76.5625% {
+    opacity: 1;
+  }
+  98.4375% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.welcome{
+  position: absolute;
+   top: 40%; 
+left: 50%;
+transform: translate(-50%, -50%);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 99;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;  
+  font-size: 5vmax;
+  text-transform: uppercase;
+  padding: 1em 1em;
+  line-height: 1.5;
+  color: #ffcc01;
+  -webkit-text-stroke: black;
+-webkit-text-stroke-width: 2px;
+transition: .5s ease;
+opacity: 0;
+
+}
+.cap:hover .welcome {
+  opacity: 1;
+}
+.content {
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+  background-image: url("barci/despre.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;
+  overflow: hidden;
+
+}
+.content-text{
+  align-items: flex-start;
+display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+}
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:5%;
+  width: 320px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5vmax;
+  text-transform: uppercase;
+  color: #ffcc01;
+  -webkit-text-stroke: black;
+-webkit-text-stroke-width: 1px;
+transition: .5s ease;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+background-color: rgba(240, 248, 255, 0.332);
+backdrop-filter: blur(5px);
+border-radius: 20px;
+}
+.about {
+  border-radius: 50%;
+  height: 312px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.48);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 400px;
+  margin-top: -70px;
+}
+.about:after {
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%;
+}
+.about:hover {
+  transform: scale(0.54);
+}
+.about-inner {
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -150px;
+}
+.circle {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 380px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 210px;
+  width: 380px;
+}
+.img {
+  pointer-events: none;
+  position: relative;
+  transform: translateY(20px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about:hover .img {
+  transform: translateY(0) scale(1.2);
+}
+.img1 {
+  left: 22px;
+  top: 164px;
+  width: 340px;
+}
+.img2 {
+  left: -46px;
+  top: 174px;
+  width: 444px;
+}
+.img3 {
+  left: -16px;
+  top: 144px;
+  width: 466px;
+}
+.divider {
+  background-color: #f1532e;
+  height: 1.4px;
+  width: 160px;
+}
+.numele {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+}
+.title {
+  color: rgb(0, 0, 0);
+  font-family: arial;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 4px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.descriere{
+opacity: 0; 
+  color: rgb(0, 0, 0);
+  font-family: arial;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 4px;
+  transition: height 1s ease,opacity 1s ease-in;
+
+  transition-timing-function: ease;
+height: 30px;
+}
+.person:hover .descriere{
+  opacity: 1;
+  height: 200px;
+  display: block;
+  transition: height 1s ease,opacity 1s ease-in;
+
+}
+ .poveste{
+  position: relative;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 1em 2em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.4vmax;
+  text-transform: uppercase;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+background-color: rgba(240, 248, 255, 0.332);
+backdrop-filter: blur(5px);
+border-radius: 20px;
+  -webkit-text-stroke: black;
+-webkit-text-stroke-width:1.5px;
+color: #ffcc01;
+  
+}
+
+/* unvisited link */
+.poveste :link {
+  color: rgb(158, 158, 158);
+  -webkit-text-stroke: #000;
+-webkit-text-stroke-width: 1px;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: #000;
+-webkit-text-stroke-width: 1px;
+}
+
+/* mouse over link */
+.poveste a:hover {
+  color:#ffcc01;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+.gallery{
+  width: 600%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  position: relative;
+  animation: myfirst 35s linear infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+height: 100vh;     
+background-image: url("coperta.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}    
+
+@keyframes myfirst {
+  0%   {left: 0%; top: 0px;}
+  100% {left: -500%; top: 0px;}
+}
+.gallery-item{ 
+  display: flex;
+  width: 100%;
+  height: 60%; 
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  backdrop-filter: blur(5px);
+
+}
+.gallery-item:hover{
+  transform: scale(1.5);
+  transition: transform 0.1s ease-in;
+  z-index: 100;
+}
+.gallery{
+  pointer-events: none;
+}
+.gallery-item{
+  pointer-events: auto;
+}
+
+.gallery:hover{
+  animation-play-state: paused;
+}
+.gallery:hover .gallery-item{
+  animation-play-state: running;
+}
+
+.gallery-item img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.gallery-item-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-item-:hover{
+  opacity: 1;
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 500px) {
+  .gallery{
+    width: 1200% !important;
+  }
+  .container .card_text {
+    display: none;
+  }
+  .container .card img {
+    filter: blur(0px);
+  }
+  .container .card .card__head {
+    transform: rotate(0deg);
+    font-size: 1.3em;
+  }
+  .container {
+    transform: skew(0deg);
+    flex-direction: column;
+
+
+  }
+  .content1{
+    height: auto;
+  }
+  .container .card {
+    width: 100%;
+
+  }
+}
+@media screen and (max-width: 800px) {
+  .gallery{
+    width: 1000%;
+  }
+  .gallery-item {
+    height: 350px;
+  }
+  .person{
+    width: 255px;
+  }
+  .poveste{
+    font-size: 2.4vmax;
+  }
+.welcome{
+  font-size: 4vmax;
+  padding: 0%;
+  opacity: 1;
+}
+  hr + h2 {
+    font-size: 2.1vmax;
+  }
+#menium{
+  display: none;
+}
+
+#menu1Toggle a{
+color: #000;
+}
+#menu1Toggle {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 35px;
+  left: 15px;
+  z-index: 11000;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menu1Toggle input
+{
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#menu1Toggle span
+{
+  display: flex;
+  width: 49px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menu1Toggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menu1Toggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menu1Toggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383F;
+}
+#menu1Toggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu1Toggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu1
+{
+  font-size: x-large;
+  position: absolute;
+  width: 220px;
+  height: 400px;
+  box-shadow: 0 0 10px #85888C;
+  margin: -50px 0 0 -16px;
+  padding: 50px;
+  padding-top: 125px;
+  background-color: #F5F6FA;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu1 li
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+}
+
+#menu1Toggle input:checked ~ ul
+{
+  transform: none;
+}
+}
+#menu1Toggle {
+  display: flex;
+}
+</style>
+<script>
+  function stop()
+  {
+    document.getElementsByClassName("gallery").style.animationPlayState = "paused";
+  }
+</script>
+</head>
+<body>
+  <a class="anchor" name="nav-8"></a>
+  <section class="nav-8" id="menium">
+
+   <div class="numeL">       
+   <img src="logo.png" alt="">
+    <span style=" font-family: 'Anton', sans-serif;">Canoe T'URS</span>
+
+   </div>
+    <nav>
+      <a class="item" href="index.html">
+        <div data-text="Pagina principala" class="linktext">Acasa</div>
+      </a>
+      <a class="item" href="despre.html">
+        <div data-text="Povestea noastra" class="linktext">Despre noi</div>
+      </a>
+      <a class="item" href="inchirieri.html">
+        <div data-text="Caiac,canoe,dragon boat" class="linktext">Inchirieri</div>
+      </a>
+      <a class="item" href="#nav-8">
+        <div data-text="Pentru nevoile tale" class="linktext">Evenimente</div>
+      </a>
+     
+      <a class="item" href="contact.html">
+        <div data-text="Unde ne gasiti" class="linktext">Contact</div>
+      </a>
+    </nav> 
+  </section>
+  <nav role="navigation">
+    <div id="menu1Toggle">
+      <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+    <ul id="menu1">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="produse.html">Produse</a></li>
+      <li><a href="comanda.html">Comandă</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  </nav>
+    <div class="cap">         
+<div class="welcome">Bine ați venit pe pagina oficiala <br>Canoe T'URS</div>
+
+      <!-- You can add more ".slideshow-image" elements, but remember to update the "$items" variable on SCSS -->
+ <div class="slideshow">
+       <div class="slideshow-image" style="background-image: url('slideshow/7.jpg')">  </div>       
+        <div class="slideshow-image" style="background-image: url('slideshow/1.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/4.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/3.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/2.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/5.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/6.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/8.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/9.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/10.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/11.jpg')"></div>
+        <div class="slideshow-image" style="background-image: url('slideshow/12.jpg')"></div>
+      </div> 
+
+
+     
+      
+    </div>
+    <hr/>
+    <h2>Cine suntem?</h2> 
+    <div class="content" style="background-image: url('barci/despre2.jpg');">
+       <center>
+        <div class="poveste">
+          Canoe T'Urs desfășoară sporturi nautice, vâslit, Caiac, Canoe, SUP și activități de aventură pe tot parcursul anului, oamenii care se bucură de apă si natura în diferite anotimpuri.
+        </div>
+        <div class="poveste">
+Vaslitul poate fi practicat atat individual cat si in echipa, acoperind o gama larga de modele, cum ar fi: Dragon Boat, Canoe,Caiac si SUP.
+        </div>
+          
+        <div class="poveste">
+          Dorim să sprijinim și să oferim oportunități pentru toată lumea de a se bucura și de a-și realiza potențialul în toate aspectele vaslitului, indiferent de vârstă, background sau abilități.
+          </div>  
+          <div class="poveste" style="width: 50% ;">
+            <a href="despre.html">Afla mai multe informatii despre noi!</a>
+          </div>
+       </center> 
+    </div>
+
+    <hr/>
+  <h2>Echipa noastra !</h2>
+    <div class="content">
+      
+      <div class="content-text">
+        
+        <div class="person">
+          <div class="about" >
+            <div class="about-inner" >
+              <img class="circle" src="slideshow/" >
+            </div>
+          </div>
+          <div class="numele">Mircea</div>
+          <div class="title">Senior UX</div>
+          <div class="descriere" id="descriere">
+            <p>
+              Mircea, absolvent al Liceului de Marina Orsova,are o pasiune pentru vâslit, începând de la vârsta de 13 ani sa practice acest sport.
+            </p>
+          </div>
+        </div>
+        <div class="person">
+          <div class="about" >
+            <div class="about-inner">
+              <img class="circle" src="slideshow/">
+            </div>
+          </div>
+          <div class="numele">Stefan</div>
+          <div class="title">Senior UX</div>
+          <div class="descriere" id="descriere2">
+            <p>
+              Un tanar impatimit al traseelor montane si al apelor, practicand inotul de performanta si invatand de la cei mai buni tehnicile vaslitului in caiac & canoe.
+            </p>
+          </div>
+        </div>
+        </div>
+  
+       
+      </div>
+      <hr/>
+      <h2>Ce inchiriem?</h2>
+        <div class="content1">
+         
+<div class="container">
+     
+      <div class="card">
+        <a href="caiac.html">
+          <div class="card__head" style="z-index: 1000;">Caiac</div>
+           
+       
+          
+      <img src="barci/1.jpg"> 
+    </a> 
+      </div>
+    
+
+      <div class="card"><a href="canoe.html">
+        <img src="barci/2.jpg">
+        <div class="card__head">Canoe</div>
+        
+      </a>
+      </div>
+      <div class="card">
+        <a href="">
+        <img src="barci/4.jpg">
+        <div class="card__head" >Dragon Boat</div>
+        
+      </a>
+      </div>
+      <div class="card">
+       <a href="sup.html">
+        <img src="barci/5.jpg">
+        <div class="card__head" >S.U.P</div>
+        
+      </a>
+      </div>
+      <div class="card">
+        <a href="">
+        <img src="barci/mirena.jpg">
+        <div class="card__head">Barca cu motor</div>
+        
+      </a>
+      </div>
+      
+    </div>
+
+        </div> 
+        <hr/>
+        <h2>Galerie</h2>        
+       <div class="gallery">
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/1.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/2.jpg" alt="">
+            </div>  
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/3.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/4.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/5.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/6.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/7.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/8.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/9.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/10.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/11.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/12.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/13.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/14.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/15.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/16.jpg" alt="">
+            </div>
+            <div class="gallery-item" id="galeria">
+              <img src="galerie/17.jpg" alt="">
+            </div>
+          </div>
+      
+        
+
+
+
+
+      </body>
+      
+        
+</html>

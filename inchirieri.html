@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">    
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/menucss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+
+        </title>
+<style>
+    .content {
+  min-height: 150vh;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+
+}
+.content-text{
+  align-items: flex-start;
+display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+}
+.person {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:5%;
+  width: 400px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5vmax;
+  text-transform: uppercase;
+  color: #ffcc01;
+  -webkit-text-stroke: black;
+-webkit-text-stroke-width: 1px;
+transition: .5s ease;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+background-color: rgba(240, 248, 255, 0.332);
+backdrop-filter: blur(5px);
+border-radius: 20px;
+margin-bottom: 10px;
+}
+.about {
+  height: 312px;
+  -webkit-tap-highlight-color: transparent;
+  transform: scale(0.48);
+  width: 400px;
+  margin-top: -70px;
+}
+
+.about:hover {
+  transform: scale(0.54);
+}
+.about-inner {
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -150px;
+}
+.circle {
+      cursor: pointer;
+  height: 380px;
+  left: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 210px;
+  width: 380px;
+}
+.img {
+  pointer-events: none;
+  position: relative;
+  transform: translateY(30px) scale(1.15);
+  transform-origin: 50% bottom;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.about:hover .img {
+  transform: translateY(0) scale(1.2);
+}
+.img1 {
+  left: 22px;
+  top: 164px;
+  width: 340px;
+}
+.img2 {
+  left: -46px;
+  top: 174px;
+  width: 444px;
+}
+.img3 {
+  left: -16px;
+  top: 144px;
+  width: 466px;
+}
+.divider {
+  background-color: #f1532e;
+  height: 1.4px;
+  width: 160px;
+}
+.numele {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+}
+.title {
+  color: #fbff00;
+  font-family: arial;
+  font-size: 1.2vmax;
+  font-style: italic;
+  margin-top: 4px;
+  text-align: center;
+  padding-bottom: 40px;
+  -webkit-text-stroke: #000;
+-webkit-text-stroke-width: 1px;
+font-family: 'Oswald', sans-serif;
+}
+.descriere{
+    color: #ffcc01;
+  -webkit-text-stroke: #000;
+-webkit-text-stroke-width: 1px;
+font-family: 'Oswald', sans-serif;
+
+  font-size: 1.1vmax;
+height: auto;
+}
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 177%;
+  margin-top: 0%;
+  margin-left: 0px;
+  opacity: 0;
+  position: absolute;
+  filter: blur(5px);
+  width: 100%;
+  z-index: -1;
+}
+.crossfade > figure:nth-child(1) { background-image: url('barci/1.jpg'); }
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('banner1.jpg');
+}
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('banner2.jpg');
+}
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('banner3.jpg');
+}
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('banner4.jpg');
+}
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+
+hr {
+  z-index: 10;
+  display: block;
+  position: absolute;
+  margin-top:-1px;
+  width: 100%;
+  height: 5px;
+  border: 0;
+}
+hr + h2 {
+  z-index: 100;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  margin-top: -25px;
+  padding: 5px 10px;
+  border: 1px solid #030900;
+  transform: translateX(-50%);
+  color: #ffcc01;
+  -webkit-text-stroke: #000;
+-webkit-text-stroke-width: 1px;
+  font-size: 1.8vmax;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-align: center;
+  border-radius: 25px;
+  text-transform: uppercase;
+  background-color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  backdrop-filter: blur(5px);  
+}
+hr + h2::first-letter {
+  margin-left: 0.32em;
+}
+
+/* Alternative transform: translate */
+hr + h2 {
+  border-width: 1px 0;
+}
+hr + h2::before, hr + h2::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #453986;
+  content: "";
+}
+hr + h2::before {
+  left: 0;
+}
+hr + h2::after {
+  right: 0;
+}
+@media screen and (max-width: 768px) {
+  .content-text {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0;
+    flex-direction: column;
+    align-content: center;
+}
+.person {
+  width: 90%;
+}
+.descriere{
+  font-size: 20px;
+}
+.title{
+  font-size: 23px;
+}
+.numele{
+  font-size: 40px !important;
+}
+.crossfade > figure {
+  height: 400vh;
+}
+}
+</style>
+</head>
+<body>
+  <div class="crossfade">
+    <figure></figure>
+     <figure></figure>
+     <figure></figure>
+     <figure></figure>
+     <figure></figure>
+   </div> 
+    <a class="anchor" name="nav-8"></a>
+    <section class="nav-8">
+  
+     <div class="numeL">       
+     <img src="logo.png" alt="">
+      <span style=" font-family: 'Anton', sans-serif;">Canoe T'URS</span>
+  
+     </div>
+     <nav>
+      <a class="item" href="index.html">
+        <div data-text="Pagina principala" class="linktext">Acasa</div>
+      </a>
+      <a class="item" href="despre.html">
+        <div data-text="Povestea noastra" class="linktext">Despre noi</div>
+      </a>
+      <a class="item" href="inchirieri.html">
+        <div data-text="Caiac,canoe,dragon boat" class="linktext">Inchirieri</div>
+      </a>
+      <a class="item" href="#nav-8">
+        <div data-text="Pentru nevoile tale" class="linktext">Evenimente</div>
+      </a>
+     
+      <a class="item" href="contact.html">
+        <div data-text="Unde ne gasiti" class="linktext">Contact</div>
+      </a>
+    </nav> 
+    </section>
+   
+    
+    <div class="content">
+      <hr >
+    <h2 style=" margin-top: 150px;">Preturi</h2>
+
+        <div class="content-text">
+          <div class="person">
+        <a href="caiac.html"> <div class="about" >
+              <div class="about-inner" >
+               <img class="circle" src="barci/despre2.jpg" >
+              </div>
+            </div></a>
+            <div class="numele">Caiac</div>
+            <div class="title">De la 70 RON</div>
+            <div class="descriere" id="descriere">
+              <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ducimus veniam eligendi facere maxime. Quia quas minus fuga, explicabo ipsum libero provident veniam. Mollitia, ullam? Labore odio enim vel? Consequuntur.              </p>
+            </div>
+          </div>
+          <div class="person">
+           <a href="canoe.html"> <div class="about" >
+              <div class="about-inner" >
+                <img class="circle" src="barci/despre.jpg" >
+              </div>
+            </div></a>
+            <div class="numele">Canoe</div>
+            <div class="title">De la 90 RON</div>
+            <div class="descriere" id="descriere">
+              <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ducimus veniam eligendi facere maxime. Quia quas minus fuga, explicabo ipsum libero provident veniam. Mollitia, ullam? Labore odio enim vel? Consequuntur.              </p>
+            </div>
+          </div>
+          <div class="person">
+            <a href="dragon.html">
+            <div class="about" >
+              <div class="about-inner" >
+                <img class="circle" src="barci/4.jpg" >
+              </div>
+            </div></a>
+            <div class="numele">Dragon Boat</div>
+            <div class="title">De la 50 RON</div>
+            <div class="descriere" id="descriere">
+              <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ducimus veniam eligendi facere maxime. Quia quas minus fuga, explicabo ipsum libero provident veniam. Mollitia, ullam? Labore odio enim vel? Consequuntur.              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-text"> 
+            <div class="person">
+            <a href="sup.html"><div class="about" >
+              <div class="about-inner" >
+                <img class="circle" src="barci/5.jpg" >
+              </div>
+            </div></a>
+            <div class="numele">S.U.P</div>
+            <div class="title">De la 60 RON</div>
+            <div class="descriere" id="descriere">
+              <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ducimus veniam eligendi facere maxime. Quia quas minus fuga, explicabo ipsum libero provident veniam. Mollitia, ullam? Labore odio enim vel? Consequuntur.              </p>
+            </div>
+            </div>
+            <div class="person">
+           <a href="barca.html"> <div class="about" >
+              <div class="about-inner" >
+                <img class="circle" src="barci/mirena.jpg" >
+              </div>
+            </div></a>
+            <div class="numele">Barca cu Motor</div>
+            <div class="title">xxx RON</div>
+            <div class="descriere" id="descriere">
+              <p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ducimus veniam eligendi facere maxime. Quia quas minus fuga, explicabo ipsum libero provident veniam. Mollitia, ullam? Labore odio enim vel? Consequuntur.              </p>
+            </div>
+            </div>
+           
+        
+        </div>
+    </div>
+</body>
