@@ -159,6 +159,9 @@
     -webkit-text-stroke-width: 1px;
   
   }
+  #menu1Toggle{ 
+    display: none;
+ }
   @media screen and (max-width: 800px) {
    
   #menium{
@@ -169,7 +172,7 @@
   color: #000;
   }
   #menu1Toggle {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     position: fixed;
     top: 35px;
